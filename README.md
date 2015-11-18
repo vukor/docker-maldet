@@ -4,6 +4,11 @@ docker-maldet
 This is docker project for check files on malware files using maldet.
 
 
+Dependecies
+===========
+You have to install Docker, make in your host operating system.
+
+
 How it's work
 ===========
 
@@ -15,7 +20,15 @@ How it's work
 
 3. Check your files:
 
-    `` docker run -v `pwd`:/htdocs -ti --rm vukor/docker-maldet maldet -a /htdocs ``
+    `` make check ``
+
+4. See reports:
+
+    `` make reports ``
+
+5. See help:
+
+    `` make help ``
 
 
 Useful links
