@@ -1,0 +1,11 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t vukor/docker-maldet .
+  - docker run --rm vukor/docker-maldet maldet --version
+
+script:
+  - echo "docker push vukor/docker-maldet"
